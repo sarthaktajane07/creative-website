@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HTML + CSS Dark Theme Guide</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #f5f5f5;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: #f1f1f1;
+      text-align: center;
+      padding: 30px 10px 15px;
+    }
+
+    header h1 {
+      font-size: 24px;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 14px;
+      color: #b0bec5;
+    }
+
+    nav {
+      background-color: #0f172a;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px;
+    }
+
+    nav a {
+      color: #f3f4f6;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #7dd3fc;
+    }
+
+    main {
+      max-width: 800px;
+      background: #1e1e1e;
+      margin: 30px auto;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    section h2 {
+      border-left: 4px solid #10b981;
+      padding-left: 10px;
+      margin-bottom: 15px;
+      color: #a7f3d0;
+    }
+
+    .card {
+      background: #2c2c2c;
+      padding: 12px 15px;
+      margin-bottom: 10px;
+      border-left: 3px solid #10b981;
+      border-radius: 4px;
+    }
+
+    .info {
+      background: #1e3a3a;
+      color: #a7f3d0;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-left: 3px solid #059669;
+    }
+
+    .example {
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 4px;
+    }
+
+    .green {
+      background: #14532d;
+      color: #d1fae5;
+    }
+
+    .red {
+      background: #7f1d1d;
+      color: #fecaca;
+    }
+
+    .yellow {
+      background: #78350f;
+      color: #fde68a;
+    }
+
+    .highlight {
+      background: #1f2937;
+      font-family: monospace;
+      color: #93c5fd;
+    }
+
+    .border-dotted {
+      border: 2px dotted #10b981;
+      text-align: center;
+      padding: 15px;
+      background: #1a1a1a;
+    }
+
+    .flex {
+      display: flex;
+      gap: 10px;
+      margin-bottom: 10px;
+    }
+
+    .flex-item {
+      flex: 1;
+      padding: 10px;
+      color: white;
+      border-radius: 4px;
+    }
+
+    .flex-item.blue {
+      background-color: #2563eb;
+    }
+
+    .flex-item.green {
+      background-color: #22c55e;
+    }
+
+    footer {
+      background: #0f172a;
+      color: #94a3b8;
+      text-align: center;
+      padding: 15px;
+      font-size: 13px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>HTML + CSS Beginner Practice Guide</h1>
+    <p>Understand basic HTML tags and CSS properties</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">Practice</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>📘 HTML Basics</h2>
+      <div class="card"><b>&lt;html&gt;</b> — Root element that wraps entire HTML document.</div>
+      <div class="card"><b>&lt;head&gt;</b> — Contains metadata like title, links to CSS, charset.</div>
+      <div class="card"><b>&lt;body&gt;</b> — Visible part of HTML page.</div>
+      <div class="card"><b>&lt;h1&gt; to &lt;h6&gt;</b> — Headings, h1 is largest.</div>
+      <div class="card"><b>&lt;p&gt;</b> — Paragraph text.</div>
+      <div class="card"><b>&lt;div&gt;</b> — Generic container block.</div>
+      <div class="card"><b>&lt;span&gt;</b> — Inline container.</div>
+      <div class="card"><b>&lt;a href&gt;</b> — Hyperlink.</div>
+      <div class="card"><b>&lt;ul&gt;, &lt;ol&gt;, &lt;li&gt;</b> — Unordered, ordered lists and items.</div>
+      <div class="card"><b>&lt;table&gt;</b> — Table structure with &lt;tr&gt;, &lt;th&gt;, &lt;td&gt;</div>
+    </section>
+
+    <section>
+      <h2>🎨 CSS Basics</h2>
+      <div class="card"><b>color:</b> Changes text color.</div>
+      <div class="card"><b>background-color:</b> Sets background.</div>
+      <div class="card"><b>padding:</b> Space inside the element.</div>
+      <div class="card"><b>margin:</b> Space outside the element.</div>
+      <div class="card"><b>border:</b> Adds outline around the element.</div>
+      <div class="card"><b>font-size:</b> Controls text size.</div>
+      <div class="card"><b>text-align:</b> Aligns text.</div>
+      <div class="card"><b>display:</b> Controls layout (block, inline, flex).</div>
+      <div class="card"><b>flexbox:</b> Layout system for flexible items.</div>
+      <div class="card"><b>box-shadow:</b> Adds shadow around elements.</div>
+    </section>
+
+    <section>
+      <h2>🧠 Practice Examples</h2>
+      <p class="info">Try modifying padding and margin values and observe changes.</p>
+      <div class="example green">Box 1: Padding: 20px | Margin: 10px</div>
+      <div class="example red"><b>Box 2:</b> Padding: 0 | Margin: 30px</div>
+
+      <div class="flex">
+        <div class="flex-item blue">Flex Item 1</div>
+        <div class="flex-item green">Flex Item 2</div>
+      </div>
+
+      <div class="example highlight">Experiment with <code>text-align</code>, <code>font-size</code>, and <code>border-radius</code>.</div>
+      <div class="example border-dotted">Centered and styled text!!</div>
+      <div class="example yellow">Rounded corner alert box.</div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Made with ❤️ for Beginners | Practice Makes Perfect!</p>
+  </footer>
+
+</body>
+</html>
+
+
